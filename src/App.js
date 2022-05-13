@@ -87,7 +87,6 @@ function App() {
         } else if (count == 10) {
             storyResponse10 = response.data.choices[0].text;
         } else if (count == 11) {
-            count = 1;
             setPrint(false);
             setPrint2(false);
             setPrint3(false);
@@ -98,8 +97,10 @@ function App() {
             setPrint8(false);
             setPrint9(false);
             setPrint10(false);
+            count = 1;
+            storyResponse = response.data.choices[0].text;
+            console.log(storyResponse)
         }
-
         waitAndSet();
     }
 
@@ -163,7 +164,6 @@ function App() {
                         <button className="button" onClick={
                             () => {
                                 getStory(data);
-                                //console.log(selectedOption.value)
                             }
                         }> Click Me </button>
                     </span>
@@ -273,7 +273,6 @@ function App() {
                         </div>
                         : null
                 }
-
             </header>
         </div>
     );
