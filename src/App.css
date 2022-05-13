@@ -1,38 +1,183 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+    text-align: center;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+    background-color: #FFFFFF;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: black;
 }
 
 .App-link {
-  color: #61dafb;
+    color: #000000;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.dropDownBox {
+    width: 450px;
+    height: 70px;
+    margin-top: 7px;
+    display: inline-block;
+    margin-left: 300px;
+}
+
+.button {
+    background-color: #001133;
+    border-radius: 10px;
+    height: 50px;
+    width: 150px;
+    border: none;
+    color: #eeeeee;
+    cursor: pointer;
+    display: inline-block;
+    margin-left: 10px;
+    font-family: sans-serif;
+    font-size: 20px;
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+}
+
+@keyframes glowing {
+    0% {
+        background-color: #0051f2;
+        box-shadow: 0 0 5px #01033b;
+    }
+
+    50% {
+        background-color: #02359c;
+        box-shadow: 0 0 20px #01033b;
+    }
+
+    100% {
+        background-color: #01143b;
+        box-shadow: 0 0 5px #01033b;
+    }
+}
+
+.button {
+    animation: glowing 1300ms infinite;
+}
+
+
+
+
+
+
+.title {
+    margin-top: 5px;
+}
+
+.btn:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.input {
+    width: 900px;
+    height: 80px;
+    border-radius: 10px;
+    font-size: 45px;
+}
+
+.idea {
+    overflow: hidden;
+    border-right: .15em solid black;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 15%
+    }
+}
+
+
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: black;
+    }
+}
+
+h2, h3 {
+    line-height: 1.2;
+    font-family: Courier, sans-serif;
+}
+
+.iframe:hover {
+    transform: scale(1.5);
+    z-index: 2;
+}
+
+.textHolder {
+    width: 900px;
+    height: 450px;
+    color: black;
+    background-color: #e1f3f7;
+    font-size: 25px;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+
+.textHolder2 {
+    width: 900px;
+    height: 450px;
+    color: black;
+    background-color: #e1f3f7;
+    font-size: 25px;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+
+.textHolder3 {
+    width: 900px;
+    height: 450px;
+    color: black;
+    background-color: #e1f3f7;
+    font-size: 25px;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+
+.textHolder4 {
+    width: 900px;
+    height: 450px;
+    color: black;
+    background-color: #e1f3f7;
+    font-size: 25px;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+
+.prompt {
+    font-weight: bold;
+    font-size: 25px;
+    float: left;
+    display: inline;
+}
+
+.reponse {
+    justify-content: space-between;
+    float: left;
+    display: inline;
 }
